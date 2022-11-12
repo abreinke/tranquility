@@ -23,15 +23,7 @@ function draw(){
    line(mouseX, mouseY, pmouseX, pmouseY);
    }
    return false;
-   }
-   if (x > 250){
-     mySound.play();
-   }
-   else if (x < 250){
-     oceanSound.play();
-   }
 }
-
 
 function keyTyped (){
   if (key === 'r') {
