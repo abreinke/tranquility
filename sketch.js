@@ -8,10 +8,11 @@ function setup() {
 
 function draw(){
   if (mouseIsPressed) {
-     line(mouseX, mouseY, pmouseX, pmouseY);
+     line(25);
   }
   return false;
-  }
+}
+
    function mouseMoved(){
    if (mouseX > 250){
       stroke(4,196,187);
