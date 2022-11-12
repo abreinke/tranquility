@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw(){
-  if (mousePressed)(){
+  if (mousePressed) {
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
   }
   return false;
