@@ -36,3 +36,14 @@ function keyTyped (){
     stroke(4,196,187);
   }
 }
+
+function mouseMoved(){
+  if (y > 250){
+    mySound.play();
+    loop;
+  }
+  else if (y < 250){
+    oceanSound.play();
+    loop;
+  }
+}
