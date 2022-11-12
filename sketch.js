@@ -8,30 +8,28 @@ function preload (){
 }
 
 let x = 500;
-function setup() { 
+function setup() {
   createCanvas(500, 500);
   background(0, 0, 0);
   stroke(237,170,166);
   strokeWeight(25);
   soundVolume = 0.5;
   mySound.setVolume(soundVolume);
-  oceanSound.setVolume(soundVolume); 
+  oceanSound.setVolume(soundVolume);
 }
 
 function draw(){
   if (mouseIsPressed){
    line(mouseX, mouseY, pmouseX, pmouseY);
-    mySound.play();
    }
-    if (x > 250){
-    x-=2;
-  }
-  else if (x < 250){
-    x+=2;
-  }
-  x+=floor(movedX / 5);
-  background(0, 0, 0);
-  
+   return false;
+   }
+   if (x > 250){
+     mySound.play();
+   }
+   else if (x < 250){
+     oceanSound.play();
+   }
 }
 
 
