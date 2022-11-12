@@ -1,26 +1,18 @@
-let mySound;
-let oceanSound;
-
-function preload (){
-  soundFormats('mp3');
-  mySound = loadSound ('assets/birds.mp3');
-  oceanSound = loadSound('assets/ocean.mp3');
-}
 
 let x = 500;
 function setup() {
+  mySound = loadSound('assets/birds.mp3');
   createCanvas(500, 500);
   background(0, 0, 0);
   stroke(237,170,166);
   strokeWeight(25);
-  soundVolume = 0.5;
-  mySound.setVolume(soundVolume);
-  oceanSound.setVolume(soundVolume);
+  mouseMoved();
 }
 
 function draw(){
   if (mouseIsPressed){
    line(mouseX, mouseY, pmouseX, pmouseY);
+   mySound.play();
    }
    return false;
 }
@@ -34,16 +26,5 @@ function keyTyped (){
   }
   else if (key === 'b'){
     stroke(4,196,187);
-  }
-}
-
-function mouseMoved(){
-  if (y > 250){
-    mySound.play();
-    loop;
-  }
-  else if (y < 250){
-    oceanSound.play();
-    loop;
   }
 }
