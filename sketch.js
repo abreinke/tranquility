@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw(){
-  if (mouseIsPressed){
    line(mouseX, mouseY, 150, 150);
     }
    function mouseMoved(){
