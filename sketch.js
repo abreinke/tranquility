@@ -6,7 +6,6 @@ function setup() {
   background(0, 0, 0);
   stroke(237,170,166);
   strokeWeight(25);
-  mouseMoved();
 }
 
 function draw(){
