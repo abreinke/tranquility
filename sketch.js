@@ -5,9 +5,9 @@ function setup() {
 }
 
 function draw(){
-   line(mouseX, 25);
-   stroke(237,170,166);
-   strokeWeight(25);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+  stroke(237,170,166);
+  strokeWeight(25);
    }
    function mouseMoved(){
    if (mouseX > 250){
