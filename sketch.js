@@ -8,7 +8,7 @@ function setup() {
 
 function draw(){
   if (mouseIsPressed) {
-  line(mouseX, mouseY);
+    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
   }
   return false;
   }
