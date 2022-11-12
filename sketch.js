@@ -16,4 +16,3 @@ function draw(){
        stroke(4,196,187);
      }
    }
- }
