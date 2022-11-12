@@ -11,20 +11,11 @@ function setup() {
 
 function draw(){
   if (mouseIsPressed){
-   line(mouseX, mouseY, pmouseX, pmouseY);
-   mySound.play();
+   line(mouseX, mouseY, 150, 150);
+    }
+   function mouseMoved(){
+     if (mouseX > 250){
+       stroke(4,196,187);
+     }
    }
-   return false;
-}
-
-function keyTyped (){
-  if (key === 'r') {
-    stroke(237,170,166);
-  }
-  else if (key === 'y') {
-    stroke(251,238,110);
-  }
-  else if (key === 'b'){
-    stroke(4,196,187);
-  }
-}
+ }
