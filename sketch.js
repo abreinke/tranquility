@@ -9,10 +9,10 @@ function draw(){
   }
   }
    function mouseMoved(){
-   if (mouseX > 200){
+   if (mouseY > 200){
       fill(255,220,94);
   }
-   if (mouseX > 400){
+   if (mouseY > 400){
      fill(108,221,224);
   }
   ellipse(mouseX, mouseY, 10, 10);
