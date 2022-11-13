@@ -1,4 +1,4 @@
-let x = 500;
+let x = 600;
 function setup() {
   createCanvas(600, 600);
   background(0, 0, 0);
@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw(){
-  line(mouseX, mouseY, 10, 10);
+  line(10);
   }
    function mouseMoved(){
    if (mouseX > 200){
