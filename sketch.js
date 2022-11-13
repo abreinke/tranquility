@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw(){
-  line(10);
+line(mouseX, mouseY, 10, 10);
   }
    function mouseMoved(){
    if (mouseX > 200){
