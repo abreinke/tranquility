@@ -1,17 +1,19 @@
-let x = 600;
 function setup() {
   createCanvas(600, 600);
+  background(0);
 }
 
 function draw(){
-  background(0);
-  line(mouseX, mouseY, 10, 10);
+  if (mouseIsPressed){
+    fill(191,167,111);
+  }
   }
    function mouseMoved(){
    if (mouseX > 200){
-      stroke(255,220,94);
+      fill(255,220,94);
   }
    if (mouseX > 400){
-     stroke(108,221,224);
+     fill(108,221,224);
   }
+  ellipse(mouseX, mouseY, 10, 10);
 }
